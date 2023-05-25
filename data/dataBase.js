@@ -6,6 +6,6 @@ export const connectDB = ()=>{
 {
     dbName:"backend",
 })
-.then(()=> console.log("Databse Connected"))
-.catch(()=>console.log("Something went wrong"))
+.then((c)=> console.log(`Databse Connected with ${c.connection.host}`))
+.catch((e)=>console.log(e))
 };
